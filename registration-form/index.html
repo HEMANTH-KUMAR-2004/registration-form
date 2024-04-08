@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+     <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="css/style.css">
+<!--        <link rel="stylesheet" href="css/normalize.css">-->
+		 
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Trykker&family=Viga&display=swap" rel="stylesheet">
+		 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        
+    </head>
+
+    <body>
+
+        <header>
+           <h1>THE CODE REVIEW</h1>
+           <h2>Signup for our newsletter</h2>
+           <p>Get the latest news on how your code is doing right in your inbox</p>
+        </header>
+        <hr class="top_line">
+        <main>
+            <form class="form" action="index.html" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <div class="flex-form">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="input" name="name" placeholder="Required " required>
+                    </div>
+
+                    <div class="flex-form">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="input" name="email" placeholder="Required " required>
+                    </div>
+
+                    <div class="flex-form">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" class="input" name="phone_number" placeholder="(xxx) xxx - xxxx">
+                    </div>
+
+                    <div class="flex-form">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" class="input" name="address">
+                    </div>
+
+                    <div class="flex-form">
+                        <label for="city">City</label>
+                        <input type="text" id="city" class="input" name="city">
+                    </div>
+
+                    <div class="flex-form">
+                        <label for="province">Province</label>
+                        <select id="province" class="input" name="province">
+                            <option class="chap">Choose Province</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="Ab">Alberta</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YT">Yukon</option>
+                          
+                        </select>				
+                    </div>
+
+                    <div class="flex-form">
+                        <label for="zip_code">Zip Code</label><br>
+                        <input type="text" id="zip_code" name="zip_code" class="input">
+                    </div>
+
+                </fieldset>
+                <hr class="second_line">
+                <fieldset>
+                    <legend>Newsletter</legend>
+
+                    <p>Select the newsletters you would like to recieve</p>
+
+                    <div>
+                        <input type="checkbox" id="html_news" class="check" name="html_news"> 
+                        <label for="html_news">HTML News</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox"  id="css_news" class="check" name="css_news">
+                        <label for="css_news">CSS News</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="javascript_news" class="check" name="javascript_news">
+                        <label for="javascript_news">Javascript News</label>
+                    </div>
+
+                    <p>Newsletter Format</p>
+
+                    <div>
+                        <input type="radio" id="html_format" class="check" name="format">
+                        <label for="html_format">HTML</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="plaintext_format" class="check" name="format">
+                        <label for="plaintext_format">Plain Text</label>
+                    </div>
+
+                    <div>
+                        <label for="textarea">Other topics you'd like to hear about</label>
+						
+                        <textarea id="textarea" name="textarea" class="textarea"></textarea>
+                    </div>
+					
+                </fieldset>
+
+                <button class="button" type="submit">Sign Up</button>
+            </form>
+        </main>
+        
+        <footer>
+            <p class="c-foot"><i>Copyright</i> The Code Review</p>
+        </footer>
+    </body>
+</html>
+    
